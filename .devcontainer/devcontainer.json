@@ -1,0 +1,24 @@
+{
+    "name": "CK3 Customn Labs",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // Docker
+                "ms-azuretools.vscode-docker",
+                "docker.docker",
+                // Linting
+                "EditorConfig.EditorConfig",
+                "exiasr.hadolint",
+                // Language support
+                "yzhang.markdown-all-in-one",
+                "unlomtrois.ck3tiger-for-vscode",
+                "dragon-archer.paradox-highlight",
+                // Dev tools
+                "eamodio.gitlens"
+            ]
+        }
+    }
+}

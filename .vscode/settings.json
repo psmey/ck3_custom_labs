@@ -1,0 +1,22 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "always",
+        "source.organizeImports": "always",
+        "source.organizeLinkDefinitions": "always"
+    },
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.wordWrap": "off",
+    "files.autoSave": "onFocusChange",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "markdown.extension.preview.autoShowPreviewToSide": true,
+    "[paradox]": {
+        "files.encoding": "utf8bom"
+    }
+}
