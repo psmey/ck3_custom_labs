@@ -1,0 +1,172 @@
+﻿cl_lords_of_the_floodplains = {
+    color = { 0.1 0.6 0.2 }
+
+    parents = { norman greek }
+
+    created = 817
+
+    heritage = heritage_dravidian
+    language = language_norse
+    martial_custom = martial_custom_equal
+
+    head_determination = head_determination_domain
+
+    ethos = ethos_bureaucratic
+    # +15% Development Growth
+    # +10% Monthly Lifestyle Experience
+    # +5% Cultural
+
+    # Also an option:
+    # ethos = ethos_communal
+    # -10% Building Construction Time
+    # -5% Building Construction Cost
+
+    traditions = {
+        tradition_agrarian
+        # +30% Development Growth in Farmlands and Floodplains Terrain
+        # +10% Levy Size in Farmlands and Floodplains Terrain
+        # −10% Building Construction Cost in Farmlands and Floodplains Terrain
+        # +20% Taxes in Farmlands and Floodplains Terrain if Diligent or Patient
+        # +20% Development Growth in Farmlands and Floodplains Terrain if Athletic
+
+        tradition_polders
+        # +2%/+3%/+4%/+5%/+6%/+6%/+7%/+8% Holding Taxes scaling with Manor Houses level in coastal baronies
+        # +1% Holding Taxes per Orchards level in coastal baronies
+        # +0%/+0%/+10%/+10%/+10%/+10%/+10%/+10% Supply Limit scaling with Orchards level in coastal baronies
+        # −10% Construction Time in coastal baronies
+
+        tradition_gardening
+        # Can construct Royal Gardens duchy buildings
+        # Can grant the Court Gardener court position
+
+        tradition_roman_legacy
+        # −15% Men-at-Arms Recruitment Cost
+        # −15% Men-at-Arms Maintenance
+        # +2 Max Size of Heavy Cavalry Regiments
+        # +2 Max Size of Heavy Infantry Regiments
+
+        # tradition_horse_breeder
+        # Heavy Cavalry: -15% Maintenance
+        # Heavy Cavalry: -25% Recruitment Cost
+        # -> not used because not enough slots
+
+        tradition_only_the_strong
+        # +2 Number of Knights
+        # +100% knight Effectiveness
+        # +8 Men-at-Arms Damage
+        # +8 Men-at-Arms Toughness
+
+        tradition_seafaring
+        # Can sail through Major Rivers
+        # −85% Embarkation Cost
+        # -45 Sea Danger
+        # +0.10 Monthly Control for Tradeport levels 1/2
+        # +0.15 Monthly Control for Tradeport levels 3/4
+        # +0.20 Monthly Control for Tradeport levels 5/6
+        # +0.25 Monthly Control for Tradeport levels 7/8
+        # +1 Max Size of Men-at-Arms regiments for Tradeport levels 4/5
+        # +2 Max Size of Men-at-Arms regiments for Tradeport levels 6/7
+        # +3 Max Size of Men-at-Arms regiments for Tradeport level 8
+    }
+
+    # FP3 traditions
+    dlc_tradition = {
+        trait = tradition_fp3_frontier_warriors
+        # Can recruit Tarkhans as Men-at-Arms
+        # +5% Army Movement Speed
+        requires_dlc_flag = legacy_of_persia
+    }
+
+    # EP3 traditions
+    dlc_tradition = {
+        trait = tradition_ep3_audacious_cadets
+        # +20 Heavy Cavalry Damage
+        # +20 Heavy Cavalry Pursuit
+        # +2 Max Size of Heavy Cavalry Regiments
+        # -10% Siege Phase Time
+        requires_dlc_flag = roads_to_power
+    }
+
+    name_list = name_list_norse
+
+    coa_gfx = { byzantine_group_coa_gfx norse_coa_gfx }
+    building_gfx = { byzantine_building_gfx }
+    clothing_gfx = { byzantine_clothing_gfx }
+    unit_gfx = { eastern_unit_gfx }
+
+    ethnicities = {
+        50 = caucasian_northern_blond
+        20 = caucasian_northern_brown_hair
+        10 = caucasian_northern_dark_hair
+    }
+}
+
+cl_the_marsh_man = {
+    color = { 0.1 0.4 0.6 }
+
+    parents = { irish }
+
+    created = 817
+
+    heritage = heritage_goidelic
+    language = language_goidelic
+    martial_custom = martial_custom_equal
+
+    head_determination = head_determination_domain
+
+    ethos = ethos_bureaucratic
+    # +15% Development Growth
+    # +10% Monthly Lifestyle Experience
+    # +5% Cultural
+
+    traditions = {
+        tradition_wetlanders
+        # +25% Development Growth in Wetlands Terrain
+        # −25% Holding and Buildings Construction Cost in Wetlands Terrain
+        # −1% Building Construction Cost per Wetland Farms level
+        # −2% Building Construction Time per Wetland Farms level
+
+        tradition_polders
+        # +2%/+3%/+4%/+5%/+6%/+7%/+8%/+9% Holding Taxes scaling with Farms & Fields level in coastal baronies
+        # +2%/+3%/+4%/+5%/+6%/+7%/+8%/+9% Holding Taxes scaling with Wetland Farms level in coastal baronies
+        # −10% Construction Time in coastal baronies
+
+        tradition_longbow_competitions
+        # Can recruit Longbowmen Men-at-Arms
+        # +4 Max Size of Archer Regiments
+
+        tradition_land_of_the_bow
+        # Can recruit Nile Archers Men-at-Arms
+        # −0.5% Archer Maintenance per Hunting Grounds level
+        # −0.5% Archer Recruitment Cost per Hunting Grounds level
+        # +1% Archer Damage per Hunting Grounds level
+        # +1% Archer Toughness per Hunting Grounds level
+
+        tradition_jungle_warriors
+        # −1% Archer and Skirmisher Maintenance per Outposts level
+        # −1% Archer and Skirmisher Recruitment Cost per Outposts level
+        # +1% Levy Size per Outposts level
+        # +0.125/+0.2/+0.275/+0.35/+0.425/+0.5/+0.575/+0.65 Tax scaling with Outposts level
+
+        tradition_maritime_mercantilism
+        # +10% Coastal Holding Tax
+        # The Tradeports line of buildings can be constructed one Era early
+
+        tradition_fishermen
+        # +15%/+20%/+25%/... Men-at-Arms Toughness for stationed Men-at-Arms scaling with Tradeport level
+    }
+
+    name_list = name_list_irish
+
+    coa_gfx = { irish_coa_gfx western_coa_gfx }
+    building_gfx = { western_building_gfx }
+    clothing_gfx = { northern_clothing_gfx western_clothing_gfx }
+    unit_gfx = { western_unit_gfx }
+
+    ethnicities = {
+        5 = caucasian_blond
+        30 = caucasian_ginger
+        35 = caucasian_brown_hair
+        30 = caucasian_dark_hair
+    }
+}
