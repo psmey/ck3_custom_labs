@@ -23,6 +23,6 @@
         }
     },
     "mounts": [
-        "source=${localEnv:HOME}${localEnv:USERPROFILE}/Documents/Paradox Interactive/Crusader Kings III,target=/crusader_kings_3,type=bind,consistency=cached"
+        "source=C:/Program Files (x86)/Steam/steamapps/common/Crusader Kings III,target=/crusader_kings_3,type=bind,consistency=cached"
     ]
 }

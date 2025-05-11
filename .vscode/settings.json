@@ -17,7 +17,7 @@
     "emeraldwalk.runonsave": {
         "commands": [
             {
-                "cmd": "ck3-tiger --game /workspaces/crusader_kings_3 --config /workspaces/ck3_custom_labs/ck3-tiger.conf --unused /workspaces/ck3_custom_labs/mod/descriptor.mod > /workspaces/ck3_custom_labs/ck3-tiger.log",
+                "cmd": "ck3-tiger --game /crusader_kings_3 --config /workspaces/ck3_custom_labs/ck3-tiger.conf --unused /workspaces/ck3_custom_labs/mod/descriptor.mod > /workspaces/ck3_custom_labs/ck3-tiger.log",
                 "match": "mod/.*\\.txt$"
             }
         ]
