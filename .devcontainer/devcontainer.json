@@ -15,7 +15,6 @@
                 // Language support
                 "yzhang.markdown-all-in-one",
                 "dragon-archer.paradox-highlight",
-                "unlomtrois.ck3tiger-for-vscode", // maybe not supported anymore dunno for now, will test while developing
                 // Dev tools
                 "eamodio.gitlens",
                 "emeraldwalk.RunOnSave"
