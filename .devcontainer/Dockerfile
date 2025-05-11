@@ -7,10 +7,8 @@ RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends \
     git \
-    golang-go \
     wget \
     ca-certificates \
-    shellcheck \
     && rm -rf /var/lib/apt/lists/*
 
 RUN update-ca-certificates
@@ -18,7 +16,6 @@ RUN update-ca-certificates
 # Install Nvm, Node.js and npm
 ENV NVM_VERSION=v0.40.2
 ENV NODE_VERSION=22
-
 RUN wget -qO nvm_install.sh https://raw.githubusercontent.com/nvm-sh/nvm/${NVM_VERSION}/install.sh \
     && bash nvm_install.sh \
     && source "${HOME}/.nvm/nvm.sh" \
@@ -33,7 +30,6 @@ RUN wget -qO nvm_install.sh https://raw.githubusercontent.com/nvm-sh/nvm/${NVM_V
 
 # Install Hadolint
 ENV HADOLINT_VERSION=v2.12.0
-
 RUN wget -q https://github.com/hadolint/hadolint/releases/download/${HADOLINT_VERSION}/hadolint-Linux-x86_64 \
     && wget -q https://github.com/hadolint/hadolint/releases/download/${HADOLINT_VERSION}/hadolint-Linux-x86_64.sha256 \
     # Verify file
@@ -45,3 +41,15 @@ RUN wget -q https://github.com/hadolint/hadolint/releases/download/${HADOLINT_VE
     && mv hadolint-Linux-x86_64 /bin/hadolint \
     # Verify installation
     && hadolint --version
+
+# Install CK3 Tiger
+ENV CK3_TIGER_VERSION=v1.7.0
+RUN wget -q https://github.com/amtep/tiger/releases/download/${CK3_TIGER_VERSION}/ck3-tiger-linux-${CK3_TIGER_VERSION}.tar.gz \
+    && tar --extract --file=ck3-tiger-linux-${CK3_TIGER_VERSION}.tar.gz --gzip --verbose \
+    && rm ck3-tiger-linux-${CK3_TIGER_VERSION}.tar.gz \
+    # Make executable
+    && chmod +x /ck3-tiger-linux-${CK3_TIGER_VERSION}/ck3-tiger \
+    # Add to PATH
+    && ln -s /ck3-tiger-linux-${CK3_TIGER_VERSION}/ck3-tiger /bin/ck3-tiger \
+    # Verify installation
+    && ck3-tiger --version

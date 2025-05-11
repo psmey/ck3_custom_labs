@@ -7,18 +7,22 @@
         "vscode": {
             "extensions": [
                 // Docker
-                "ms-azuretools.vscode-docker",
+                // "ms-azuretools.vscode-docker",
                 "docker.docker",
                 // Linting
                 "EditorConfig.EditorConfig",
                 "exiasr.hadolint",
                 // Language support
                 "yzhang.markdown-all-in-one",
-                "unlomtrois.ck3tiger-for-vscode",
                 "dragon-archer.paradox-highlight",
+                "unlomtrois.ck3tiger-for-vscode", // maybe not supported anymore dunno for now, will test while developing
                 // Dev tools
-                "eamodio.gitlens"
+                "eamodio.gitlens",
+                "emeraldwalk.RunOnSave"
             ]
         }
-    }
+    },
+    "mounts": [
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/Documents/Paradox Interactive/Crusader Kings III,target=/crusader_kings_3,type=bind,consistency=cached"
+    ]
 }

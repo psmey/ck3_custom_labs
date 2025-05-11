@@ -1,4 +1,7 @@
 {
+    "[paradox]": {
+        "files.encoding": "utf8bom"
+    },
     "editor.codeActionsOnSave": {
         "source.fixAll": "always",
         "source.organizeImports": "always",
@@ -11,12 +14,17 @@
         120
     ],
     "editor.wordWrap": "off",
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "cmd": "ck3-tiger --game /workspaces/crusader_kings_3 --config /workspaces/ck3_custom_labs/ck3-tiger.conf --unused /workspaces/ck3_custom_labs/mod/descriptor.mod > /workspaces/ck3_custom_labs/ck3-tiger.log",
+                "match": "mod/.*\\.txt$"
+            }
+        ]
+    },
     "files.autoSave": "onFocusChange",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "markdown.extension.preview.autoShowPreviewToSide": true,
-    "[paradox]": {
-        "files.encoding": "utf8bom"
-    }
+    "markdown.extension.preview.autoShowPreviewToSide": true
 }
