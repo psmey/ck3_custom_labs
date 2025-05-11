@@ -38,7 +38,7 @@ RUN wget -q https://github.com/hadolint/hadolint/releases/download/${HADOLINT_VE
     # Make executable
     && chmod +x hadolint-Linux-x86_64 \
     # Add to PATH
-    && mv hadolint-Linux-x86_64 /bin/hadolint \
+    && ln -s hadolint-Linux-x86_64 /bin/hadolint \
     # Verify installation
     && hadolint --version
 
