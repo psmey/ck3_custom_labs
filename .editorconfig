@@ -11,7 +11,7 @@ trim_trailing_whitespace = true
 indent_size = 2
 
 [mod/**.txt]
-# charset is currently not supported
+# charset is currently not supported in VSC
 # https://github.com/editorconfig/editorconfig-vscode/issues/35
 # remove from settings.json when it works :)
 charset = utf-8-bom
