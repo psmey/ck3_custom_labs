@@ -15,6 +15,7 @@
                 // Language support
                 "yzhang.markdown-all-in-one",
                 "dragon-archer.paradox-highlight",
+                "pfwobcke.vscode-vdf",
                 // Dev tools
                 "eamodio.gitlens",
                 "emeraldwalk.RunOnSave"

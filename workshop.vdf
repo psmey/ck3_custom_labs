@@ -1,0 +1,19 @@
+"workshopitem"
+{
+    "appid" "220"
+
+    "contentfolder" "<PATH_TO_YOUR_CONTENT>"
+     // Full or relative path to your content(can be anything as 11/15/2024)
+
+    "previewfile" "<PATH_TO_PREVIEW>"
+     // Optional: Path to a preview image (JPG/PNG, max 1MB)
+
+    "visibility" "2"
+     // 0 = Public, 1 = Friends-only, 2 = Private
+
+    "title" "My Workshop Item"
+    // Title of your workshop item
+
+    "description" "This is a random thing."
+    // Text shown on the workshop page
+}
