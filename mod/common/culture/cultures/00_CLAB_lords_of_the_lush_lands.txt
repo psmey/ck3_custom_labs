@@ -1,0 +1,149 @@
+﻿CLAB_lords_of_the_lush_lands = {
+    color = { 0.6 0.4 0.8 } # amethyst - https://latexcolor.com/
+
+    parents = { norman greek }
+
+    created = 817
+
+    ethos = ethos_bureaucratic
+    # +15% Development Growth
+    # +10% Monthly Lifestyle Experience
+    # +5% Cultural
+
+    heritage = heritage_dravidian
+    language = language_norse
+    martial_custom = martial_custom_equal
+
+    head_determination = head_determination_domain
+
+    # Also an option:
+    # ethos = ethos_communal
+    # -10% Building Construction Time
+    # -5% Building Construction Cost
+
+    traditions = {
+        ### Development ###
+
+        tradition_agrarian
+        # +30% Development Growth in Farmlands and Floodplains Terrain
+        # +10% Levy Size in Farmlands and Floodplains Terrain
+        # −10% Building Construction Cost in Farmlands and Floodplains Terrain
+        # +20% Taxes in Farmlands and Floodplains Terrain if Diligent or Patient
+        # +20% Development Growth in Farmlands and Floodplains Terrain if Athletic
+
+        tradition_polders
+        # +2%/+3%/+4%/+5%/+6%/+6%/+7%/+8% Holding Taxes scaling with Manor Houses level in coastal baronies
+        # +1% Holding Taxes per Orchards level in coastal baronies
+        # +0%/+0%/+10%/+10%/+10%/+10%/+10%/+10% Supply Limit scaling with Orchards level in coastal baronies
+        # −10% Construction Time in coastal baronies
+
+        tradition_gardening
+        # Can construct Royal Gardens duchy buildings
+        # Can grant the Court Gardener court position
+
+        ### Knights ###
+
+        tradition_only_the_strong
+        # +2 Number of Knights
+        # +100% knight Effectiveness
+        # +8 Men-at-Arms Damage
+        # +8 Men-at-Arms Toughness
+
+        ### General Army ###
+
+        tradition_seafaring
+        # Can sail through Major Rivers
+        # −85% Embarkation Cost
+        # -45 Sea Danger
+        # +0.10 Monthly Control for Tradeport levels 1/2
+        # +0.15 Monthly Control for Tradeport levels 3/4
+        # +0.20 Monthly Control for Tradeport levels 5/6
+        # +0.25 Monthly Control for Tradeport levels 7/8
+        # +1 Max Size of Men-at-Arms regiments for Tradeport levels 4/5
+        # +2 Max Size of Men-at-Arms regiments for Tradeport levels 6/7
+        # +3 Max Size of Men-at-Arms regiments for Tradeport level 8
+
+        ### Heavy Cavalry ###
+
+        tradition_roman_legacy
+        # −15% Men-at-Arms Recruitment Cost
+        # −15% Men-at-Arms Maintenance
+        # +2 Max Size of Heavy Cavalry Regiments
+        # +2 Max Size of Heavy Infantry Regiments
+
+        # NOT USED: not enough buffs for the used slot
+        # tradition_stand_and_fight
+        # heavy_cavalry_toughness_mult = 0.1
+
+        # NOT USED: Not enough slots
+        # tradition_horse_breeder
+        # heavy_cavalry_maintenance_mult = -0.15
+        # heavy_cavalry_recruitment_cost_mult = -0.25
+
+        # NOT USED: higher maintainance cost and not enough buffs
+        # tradition_mobile_guards
+        # heavy_cavalry_toughness_mult = 0.2
+        # heavy_cavalry_maintenance_mult = 0.1
+    }
+
+    # FP3 traditions
+    dlc_tradition = {
+        trait = tradition_fp3_frontier_warriors
+        # Can recruit Tarkhans as Men-at-Arms
+        # +5% Army Movement Speed
+        requires_dlc_flag = legacy_of_persia
+    }
+
+    # NOT USED: looks strong but also like quite the hassle
+    # EP3 traditions
+    # dlc_tradition = {
+    #     trait = tradition_ep3_indomitable_azatani
+    #     # heavy_cavalry_maintenance_mult = -0.15
+    #     # heavy_cavalry_damage_mult = 0.2
+    #     requires_dlc_flag = roads_to_power
+    # }
+
+    # EP3 traditions
+    dlc_tradition = {
+        trait = tradition_ep3_audacious_cadets
+        # unlock_maa_conrois = yes
+        # unlock_voluntary_laampdom = yes
+        # much_more_likely_to_be_laamps = yes
+        # ambitious_trait_more_common = yes
+        # heavy_cavalry_damage_mult = 0.2
+        # heavy_cavalry_pursuit_mult = 0.2
+        # heavy_cavalry_max_size_add = 2
+        # siege_phase_time = -0.1
+        requires_dlc_flag = roads_to_power
+    }
+
+    # NOT USED: Not enough slots
+    # EP3 traditions
+    # dlc_tradition = {
+    #     trait = tradition_mpo_iron_cavalry
+    #     # unlock_maa_cataphract_archers = yes
+    #     # martial_traits_give_out_hcav_bonus = yes
+    #     #   strategist
+    #     #     heavy_cavalry_damage_mult = 0.1
+    #     #   overseer
+    #     #     heavy_cavalry_recruitment_cost_mult = -0.1
+    #     #     heavy_cavalry_maintenance_mult = -0.1
+    #     #   gallant
+    #     #     heavy_cavalry_toughness_mult = 0.1
+    #     # heavy_cavalry_toughness_mult = 0.2
+    #     requires_dlc_flag = khans_of_the_steppe
+    # }
+
+    name_list = name_list_norse
+
+    coa_gfx = { byzantine_group_coa_gfx norse_coa_gfx }
+    building_gfx = { byzantine_building_gfx }
+    clothing_gfx = { byzantine_clothing_gfx }
+    unit_gfx = { eastern_unit_gfx }
+
+    ethnicities = {
+        50 = caucasian_northern_blond
+        20 = caucasian_northern_brown_hair
+        10 = caucasian_northern_dark_hair
+    }
+}

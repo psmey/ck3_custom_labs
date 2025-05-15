@@ -145,7 +145,7 @@
 ##d_connacht ###################################
 ###c_connacht
 20 = {	#GALWAY
-    culture = cl_the_marsh_man
+    culture = CLAB_marsh_man
     religion = insular_celtic
     holding = tribal_holding
     988.1.1 = {
@@ -172,7 +172,7 @@
 
 ###c_mayo
 8745 = {	#CRUACHU
-    culture = cl_the_marsh_man
+    culture = CLAB_marsh_man
     religion = insular_celtic
     holding = tribal_holding
     988.1.1 = {
@@ -198,7 +198,7 @@
 
 ###c_breifne
 24 = {	#DROMAHAIR
-    culture = cl_the_marsh_man
+    culture = CLAB_marsh_man
     religion = insular_celtic
     holding = tribal_holding
     988.1.1 = {
@@ -272,7 +272,7 @@
 ##d_munster ###################################
 ###c_thomond
 45 = {	#LIMERICK
-    culture = cl_the_marsh_man
+    culture = CLAB_marsh_man
     religion = insular_celtic
     holding = tribal_holding
     988.1.1 = {
@@ -294,7 +294,7 @@
 
 ###c_ennis
 46 = {	#ENNIS
-    culture = cl_the_marsh_man
+    culture = CLAB_marsh_man
     religion = insular_celtic
     holding = tribal_holding
     988.1.1 = {
@@ -332,7 +332,7 @@
 
 ###c_desmond
 52 = {	#TRALEE
-    culture = cl_the_marsh_man
+    culture = CLAB_marsh_man
     religion = insular_celtic
     holding = tribal_holding
     988.1.1 = {

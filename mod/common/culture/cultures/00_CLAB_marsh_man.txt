@@ -1,0 +1,88 @@
+﻿CLAB_marsh_man = {
+    color = { 0.13 0.7 0.67} # lightseagreen - https://latexcolor.com/
+
+    parents = { irish welsh }
+
+    created = 817
+
+    ethos = ethos_bureaucratic
+    # +15% Development Growth
+    # +10% Monthly Lifestyle Experience
+    # +5% Cultural
+
+    heritage = heritage_goidelic
+    language = language_goidelic
+    martial_custom = martial_custom_male_only
+
+    head_determination = head_determination_domain
+
+    traditions = {
+        tradition_wetlanders
+        # peat_quarries_building_bonuses = yes
+        # wetlands_advantage = 10
+        # wetlands_development_growth_factor = 0.25
+        # wetlands_construction_gold_cost = -0.15
+        # wetlands_holding_construction_gold_cost = -0.15
+        # wetlands_levy_size = 0.1
+        # wetlands_supply_limit_mult = 0.25
+
+        tradition_polders
+        # coastal_agriculture_building_bonuses = yes
+        #   peat_quarries_08
+        #   tax_mult = 0.09
+        # coastal_holding_bonuses = yes
+
+        tradition_maritime_mercantilism
+        # next_level_trade_ports = yes
+        # maritime_mercantilism_coastal_holdings = yes
+        # maritime_mercantilism_avaricious_bonus = yes
+
+        tradition_fishermen
+        # coastal_holdings_give_defensive_bonus = yes
+        # trade_ports_stationed_maa_bonus = yes
+        # coastal_advantage = 5
+
+        tradition_adaptive_skirmishing
+        # archers_damage_mult = 0.15
+        # archers_toughness_mult = 0.15
+        # archers_maintenance_mult = -0.05
+
+        tradition_formation_fighting
+        # archers_damage_mult = 0.1
+        # archers_toughness_mult = 0.15
+
+        tradition_longbow_competitions
+        # unlock_maa_longbowmen = yes
+        # archers_max_size_add = 4
+
+        tradition_land_of_the_bow
+        # unlock_maa_archers_of_the_nile = yes
+        # hunting_archery_building_bonuses = yes
+        # archers_damage_mult = 0.2
+
+        # tradition_bush_hunting
+        # archers_damage_mult = 0.2
+
+        # tradition_jungle_dwellers
+        # outpost has worse buffs than militia camp
+        # outposts_building_bonuses = yes
+        #   max outposts_08
+        #   archers_maintenance_mult = -0.08
+        #   archers_recruitment_cost_mult = -0.08
+        #   monthly_income = super_poor_building_tax_tier_8
+    }
+
+    name_list = name_list_irish
+
+    coa_gfx = { irish_coa_gfx western_coa_gfx }
+    building_gfx = { western_building_gfx }
+    clothing_gfx = { northern_clothing_gfx western_clothing_gfx }
+    unit_gfx = { western_unit_gfx }
+
+    ethnicities = {
+        5 = caucasian_blond
+        30 = caucasian_ginger
+        35 = caucasian_brown_hair
+        30 = caucasian_dark_hair
+    }
+}
