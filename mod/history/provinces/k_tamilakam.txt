@@ -18,7 +18,7 @@
     #b_anaimalai = temple
 
     # Misc
-    culture = cl_lords_of_the_floodplains # original: tamil
+    culture = CLAB_lords_of_the_lush_lands # original: tamil
     religion = srikula_shaktism
 
 }
@@ -40,7 +40,7 @@
     #b_kadungallur = city
 
     # Misc
-    culture = tamil
+    culture = CLAB_jungle_juggernauts # default tamil
     religion = srikula_shaktism
 
     # History
@@ -68,7 +68,7 @@
     #b_aon_amaravati = castle
 
     # Misc
-    culture = cl_lords_of_the_floodplains # original: tamil
+    culture = CLAB_lords_of_the_lush_lands # original: tamil
     religion = svetambara
 
     # History
@@ -121,7 +121,7 @@
     #b_chaliyam = city
 
     # Misc
-    culture = tamil
+    culture = CLAB_jungle_juggernauts # default tamil
     religion = srikula_shaktism
 
     # History
@@ -409,7 +409,7 @@
     #b_chaliyam = city
 
     # Misc
-    culture = tamil
+    culture = CLAB_jungle_juggernauts # default tamil
     religion = vaishnavism
 
     # History
@@ -523,7 +523,7 @@
     #b_nagercoil = castle
 
     # Misc
-    culture = tamil
+    culture = CLAB_jungle_juggernauts # default tamil
     religion = srikula_shaktism
 
     # History
@@ -635,7 +635,7 @@
     #b_sankagiri = castle
 
     # Misc
-    culture = cl_lords_of_the_floodplains # original: tamil
+    culture = CLAB_lords_of_the_lush_lands # original: tamil
     religion = svetambara
     terrain = hills
 

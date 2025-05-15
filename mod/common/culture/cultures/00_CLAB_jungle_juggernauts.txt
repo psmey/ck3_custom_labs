@@ -1,0 +1,107 @@
+CLAB_jungle_juggernauts = {
+    color = { 0.0 0.29 0.29 } # deepjunglegreen - https://latexcolor.com/
+
+    parents = { oriya burmese }
+
+    created = 817
+
+    ethos = ethos_bellicose
+    # men_at_arms_recruitment_cost = -0.1
+    # men_at_arms_maintenance = -0.1
+
+    heritage = heritage_dravidian
+    language = language_tamil
+    martial_custom = martial_custom_male_only
+
+    head_determination = head_determination_domain
+
+    traditions = {
+        ### Elephants ###
+
+        tradition_lords_of_the_elephant
+        # can_recruit_jungle_specialist = yes
+        # elephant_pens_building_bonuses = yes
+        # elephant_bonuses_for_rank_4_education = yes
+        # elephant_cavalry_recruitment_cost_mult = -0.15
+        # elephant_cavalry_maintenance_mult = -0.15
+        # elephant_cavalry_toughness_mult = 0.2
+        # elephant_cavalry_damage_mult = 0.4
+
+        tradition_burman_royal_army
+        # jungle_stalker_trait_more_common = yes
+        # jungle_trait_bonuses = yes
+        # can_recruit_jungle_specialist = yes
+        # elephant_cavalry_damage_mult = 0.2
+        # elephant_cavalry_toughness_mult = 0.2
+
+        tradition_garuda_warriors
+        # unlock_maa_garudas = yes
+        #   Lenkas counter Pikemen and Bowmen (Paiks!)
+        #   this makes them the perfect support unit for Elephants
+        # unlock_garuda_warrior_title = yes
+        # martial_education_more_valued = yes
+        # prowess_traits_more_valued = yes
+        # craven_and_content_traits_looked_down_upon = yes
+        # loyal_trait_more_valued = yes
+
+        ### Jungle ###
+
+        # NOT USED: Is not legal with better tradition_hidden_cities tradition
+        # tradition_jungle_dwellers
+        # jungle_development_growth_factor = 0.25
+        # jungle_construction_gold_cost = -0.1
+        # jungle_holding_construction_gold_cost = -0.1
+
+        tradition_hidden_cities
+        # jungle_development_growth_factor = 0.35
+        # jungle_construction_gold_cost = -0.1
+        # jungle_holding_construction_gold_cost = -0.1
+
+        # NOT USED: Bonus just too minor for a slot
+        # tradition_sacred_groves
+        # jungle_tax_mult = 0.05
+
+        ### Knights ###
+
+        tradition_only_the_strong
+        # +2 Number of Knights
+        # +100% knight Effectiveness
+        # +8 Men-at-Arms Damage
+        # +8 Men-at-Arms Toughness
+
+        ### Tradeport ###
+
+        tradition_seafaring
+        # Can sail through Major Rivers
+        # −85% Embarkation Cost
+        # -45 Sea Danger
+        # +0.10 Monthly Control for Tradeport levels 1/2
+        # +0.15 Monthly Control for Tradeport levels 3/4
+        # +0.20 Monthly Control for Tradeport levels 5/6
+        # +0.25 Monthly Control for Tradeport levels 7/8
+        # +1 Max Size of Men-at-Arms regiments for Tradeport levels 4/5
+        # +2 Max Size of Men-at-Arms regiments for Tradeport levels 6/7
+        # +3 Max Size of Men-at-Arms regiments for Tradeport level 8
+
+        tradition_maritime_mercantilism
+        # next_level_trade_ports = yes
+        # maritime_mercantilism_coastal_holdings = yes
+        # maritime_mercantilism_avaricious_bonus = yes
+
+        tradition_fishermen
+        # coastal_holdings_give_defensive_bonus = yes
+        # trade_ports_stationed_maa_bonus = yes
+        # coastal_advantage = 5
+    }
+
+    name_list = name_list_tamil
+
+    coa_gfx = { dravidian_group_coa_gfx }
+    building_gfx = { indian_building_gfx }
+    clothing_gfx = { indian_clothing_gfx }
+    unit_gfx = { indian_unit_gfx }
+
+    ethnicities = {
+        10 = south_indian
+    }
+}
