@@ -11,7 +11,7 @@
     # +5% Cultural
 
     heritage = heritage_dravidian
-    language = language_norse
+    language = language_greek
     martial_custom = martial_custom_equal
 
     head_determination = head_determination_domain
@@ -86,13 +86,14 @@
         # heavy_cavalry_maintenance_mult = 0.1
     }
 
+    # NOT USED: replaced by tradition_devoted_horsemanship
     # FP3 traditions
-    dlc_tradition = {
-        trait = tradition_fp3_frontier_warriors
-        # Can recruit Tarkhans as Men-at-Arms
-        # +5% Army Movement Speed
-        requires_dlc_flag = legacy_of_persia
-    }
+    # dlc_tradition = {
+    #     trait = tradition_fp3_frontier_warriors
+    #     # Can recruit Tarkhans as Men-at-Arms
+    #     # +5% Army Movement Speed
+    #     requires_dlc_flag = legacy_of_persia
+    # }
 
     # NOT USED: looks strong but also like quite the hassle
     # EP3 traditions
@@ -117,6 +118,20 @@
         requires_dlc_flag = roads_to_power
     }
 
+    dlc_tradition = {
+        trait = tradition_devoted_horsemanship
+        # unlock_maa_horse_archers = yes
+        # can_recruit_open_specialist = yes
+        # unlock_horse_pastures_building = yes
+        # unlock_voluntary_laampdom = yes
+        # stewardship_traits_give_out_cav_bonus = yes
+        # unlock_maa_tarkhan = yes
+        # movement_speed = 0.1
+        # character_travel_speed_mult = 0.2
+        # movement_speed_land_raiding = 0.2
+        requires_dlc_flag = khans_of_the_steppe
+    }
+
     # NOT USED: Not enough slots
     # EP3 traditions
     # dlc_tradition = {
@@ -134,7 +149,7 @@
     #     requires_dlc_flag = khans_of_the_steppe
     # }
 
-    name_list = name_list_norse
+    name_list = name_list_greek
 
     coa_gfx = { byzantine_group_coa_gfx norse_coa_gfx }
     building_gfx = { byzantine_building_gfx }
