@@ -1,0 +1,198 @@
+﻿CLAB_raiders = {
+    color = norse
+
+    parents = { norse greek }
+
+    created = 817
+
+    ethos = ethos_bellicose
+    heritage = heritage_north_germanic
+    language = language_norse
+
+    martial_custom = martial_custom_male_only
+
+    head_determination = head_determination_domain
+
+    traditions = {
+        ### Coastal Holdings ###
+
+        # tradition_maritime_mercantilism
+        # next_level_trade_ports = yes
+        # maritime_mercantilism_coastal_holdings = yes
+        # maritime_mercantilism_avaricious_bonus = yes
+
+        # tradition_fishermen
+        # coastal_holdings_give_defensive_bonus = yes
+        # trade_ports_stationed_maa_bonus = yes
+        # coastal_advantage = 5
+
+        tradition_seafaring
+        # Can sail through Major Rivers
+        # −85% Embarkation Cost
+        # -45 Sea Danger
+        # +0.10 Monthly Control for Tradeport levels 1/2
+        # +0.15 Monthly Control for Tradeport levels 3/4
+        # +0.20 Monthly Control for Tradeport levels 5/6
+        # +0.25 Monthly Control for Tradeport levels 7/8
+        # +1 Max Size of Men-at-Arms regiments for Tradeport levels 4/5
+        # +2 Max Size of Men-at-Arms regiments for Tradeport levels 6/7
+        # +3 Max Size of Men-at-Arms regiments for Tradeport level 8
+
+        ### Hills ###
+
+        tradition_amharic_highlanders
+        # unlock_sarawit_innovation = yes
+        # hill_farms_building_bonuses = yes
+        # hills_development_growth_factor = 0.2
+        # hills_construction_gold_cost = -0.1
+        # hills_holding_construction_gold_cost = -0.1
+        # hills_advantage = 5
+
+        # tradition_mountaineer_ruralism
+        # unlock_maa_zbrojnosh = yes
+        # quarries_building_bonuses = yes
+        # hill_farms_building_bonuses = yes
+        # rough_terrain_expert_trait_more_common = yes
+        # mountain_trait_bonuses = yes
+        # can_recruit_mountain_specialist = yes
+        # hills_development_growth_factor = 0.1
+        # mountains_development_growth_factor = 0.1
+
+        ### Knights ###
+
+        tradition_only_the_strong
+        # +2 Number of Knights
+        # +100% knight Effectiveness
+        # +8 Men-at-Arms Damage
+        # +8 Men-at-Arms Toughness
+
+        tradition_khadga_puja
+        # martial_education_more_valued = yes
+        # unlock_maa_khandayat = yes
+        # blademaster_trait_bonuses = yes
+        # craven_and_content_traits_looked_down_upon = yes
+        # knight_effectiveness_mult = 0.1
+        # accolade_glory_gain_mult = 0.1
+
+        ### Raiding ###
+
+        tradition_practiced_pirates
+        # culture_can_raid_at_sea_even_if_feudal = yes
+        # not_tribal_raiding_malus = yes
+
+        # tradition_horse_lords
+        # unlock_maa_horse_archers = yes
+        # can_recruit_open_specialist = yes
+        # unlock_horse_pastures_building = yes
+        # steppe_hunt_success_chance = yes
+        # unlock_voluntary_laampdom = yes
+        # light_cavalry_damage_mult = 0.1
+        # light_cavalry_screen_mult = 0.1
+        # supply_duration = 1
+        # movement_speed = 0.1
+        # character_travel_speed_mult = 0.2
+        # character_travel_safety_mult = 0.2
+        # movement_speed_land_raiding = 0.3
+        # hostile_county_attrition_raiding = -0.25
+        # provisions_use_mult = -0.25
+
+        # tradition_saharan_nomads
+        # light_cavalry_maintenance_mult = -0.25
+        # light_cavalry_recruitment_cost_mult = -0.25
+        # oasis_development_growth_factor = 0.1
+        # movement_speed = 0.1
+        # character_travel_speed = 10
+        # desert_travel_danger = desert_high_danger_reduction
+        # drylands_travel_danger = drylands_high_danger_reduction
+        # desert_mountains_travel_danger = desert_mountains_high_danger_reduction
+        # movement_speed_land_raiding = 0.2
+        # hostile_county_attrition_raiding = -0.3
+        # # Nullify the maluses from world_africa_sahara_provisions_usage_multiplier_modifier.
+        # desert_provisions_use_mult = -0.66
+        # desert_mountains_provisions_use_mult = -0.66
+        # desert_supply_limit_mult = 0.5
+        # desert_mountains_supply_limit_mult = 0.5
+        # desert_fertility_growth_mult = medium_culture_county_fertility_value_mult
+        # oasis_fertility_growth_mult = high_culture_county_fertility_value_mult
+
+        # tradition_himalayan_settlers
+        # mountains_development_growth_factor = 0.2
+        # mountains_travel_danger = mountains_high_danger_reduction
+        # movement_speed_land_raiding = 0.15
+        # hostile_county_attrition_raiding = -0.2
+        # mountains_construction_gold_cost = -0.1
+        # mountains_holding_construction_gold_cost = -0.1
+
+        # tradition_desert_nomads
+        # desert_warrior_trait_is_better = yes
+        # desert_hunt_success_chance = yes
+        # resistant_to_desert_privation = yes
+        # camel_cavalry_maintenance_mult = -0.2
+        # camel_cavalry_recruitment_cost_mult = -0.2
+        # character_travel_speed = 10
+        # desert_travel_danger = desert_high_danger_reduction
+        # drylands_travel_danger = drylands_high_danger_reduction
+        # desert_mountains_travel_danger = desert_mountains_high_danger_reduction
+        # movement_speed_land_raiding = 0.2
+        # hostile_county_attrition_raiding = -0.3
+
+        ### Heavy Infantry ###
+
+        tradition_roman_legacy
+        # unlock_maa_cataphract = yes
+        # levy_size = -0.25
+        # men_at_arms_recruitment_cost = -0.15
+        # men_at_arms_maintenance = -0.15
+        # levy_reinforcement_rate = -0.25
+        # heavy_infantry_max_size_add = 2
+        # heavy_cavalry_max_size_add = 2
+    }
+
+    dlc_tradition = {
+        trait = tradition_fp1_coastal_warriors
+		# unlock_maa_bondi = yes
+		# unlock_maa_vigmen = yes
+		# unlock_maa_varangian_veterans = yes
+		# unlock_maa_huscarls = yes
+		# strong_traits_more_valued = yes
+		# strong_traits_more_common = yes
+		# trade_ports_stationed_maa_bonus = yes
+		# trade_ports_enabled_for_tribals = yes
+        requires_dlc_flag = the_northern_lords
+        fallback = tradition_hird
+    }
+
+    dlc_tradition = {
+        trait = tradition_fp1_performative_honour
+        requires_dlc_flag = the_northern_lords
+        fallback = tradition_poetry
+    }
+
+    # dlc_tradition = {
+    #     trait = tradition_devoted_horsemanship
+    #     # unlock_maa_horse_archers = yes
+    #     # can_recruit_open_specialist = yes
+    #     # unlock_horse_pastures_building = yes
+    #     # unlock_voluntary_laampdom = yes
+    #     # stewardship_traits_give_out_cav_bonus = yes
+    #     # unlock_maa_tarkhan = yes
+    #     # movement_speed = 0.1
+    #     # character_travel_speed_mult = 0.2
+    #     # movement_speed_land_raiding = 0.2
+    #     requires_dlc_flag = khans_of_the_steppe
+    # }
+
+    name_list = name_list_norse
+
+    coa_gfx = { norse_coa_gfx western_coa_gfx }
+    building_gfx = { norse_building_gfx }
+    clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+    unit_gfx = { norse_unit_gfx }
+
+    ethnicities = {
+        70 = caucasian_northern_blond
+        15 = caucasian_northern_ginger
+        10 = caucasian_northern_brown_hair
+        5 = caucasian_northern_dark_hair
+    }
+}
