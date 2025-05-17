@@ -18,12 +18,12 @@ RUN add-apt-repository multiverse \
     && apt-get install -y --no-install-recommends steamcmd \
     && rm -rf /var/lib/apt/lists/*
 
-COPY entrypoint.sh /entrypoint.sh
+WORKDIR /home/steam
+
+COPY entrypoint.sh entrypoint.sh
 
 RUN chmod +x /entrypoint.sh
 
 USER steam
 
-WORKDIR /home/steam
-
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["entrypoint.sh"]
