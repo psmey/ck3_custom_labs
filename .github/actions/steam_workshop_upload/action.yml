@@ -1,0 +1,37 @@
+name: Upload Steam Workshop Mod
+description: Uploads a CK3 mod to the Steam Workshop via SteamCMD
+inputs:
+  steam_username:
+    description: "Steam username"
+    required: true
+  steam_password:
+    description: "Steam password"
+    required: true
+  game_id:
+    description: "Steam game ID"
+    required: true
+  mod_id:
+    description: "Workshop mod ID"
+    required: true
+  mod_content_path:
+    description: "Path to the mod folder"
+    required: true
+  workshop_thumbnail_path:
+    description: "Path to the thumbnail image"
+    required: true
+  workshop_visibility:
+    description: "Visibility (0 = Public, 1 = Friends-only, 2 = Private)"
+    required: true
+  workshop_title:
+    description: "Workshop title"
+    required: true
+  workshop_description:
+    description: "Workshop description"
+    required: true
+  workshop_changenote:
+    description: "Changenote for this update"
+    required: false
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
