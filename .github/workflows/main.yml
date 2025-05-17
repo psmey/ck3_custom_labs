@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Upload new mod version
-        uses: ./github/actions/steam_workshop_upload
+        uses: ./.github/actions/steam_workshop_upload
         with:
           steam_username: ${{ secrets.STEAM_USERNAME }}
           steam_password: ${{ secrets.STEAM_PASSWORD }}
