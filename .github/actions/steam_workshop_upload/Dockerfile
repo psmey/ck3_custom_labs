@@ -13,9 +13,10 @@ RUN apt-get update \
 RUN add-apt-repository multiverse \
     && dpkg --add-architecture i386 \
     && apt-get update \
-    && echo steam steam/question select "I AGREE" | debconf-set-selections \
     && echo steam steam/license note '' | debconf-set-selections \
+    && echo steam steam/question select "I AGREE" | debconf-set-selections \
     && apt-get install -y --no-install-recommends steamcmd \
+    && ln -s /usr/games/steamcmd /usr/local/bin/steamcmd \
     && rm -rf /var/lib/apt/lists/*
 
 COPY entrypoint.sh /home/steam/entrypoint.sh
@@ -23,5 +24,6 @@ COPY entrypoint.sh /home/steam/entrypoint.sh
 RUN chmod +x /home/steam/entrypoint.sh
 
 USER steam
+WORKDIR /home/steam
 
 ENTRYPOINT ["/home/steam/entrypoint.sh"]

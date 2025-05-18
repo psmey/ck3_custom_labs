@@ -14,6 +14,8 @@ cat > workshopitem.vdf << EOF
 }
 EOF
 
+cat workshopitem.vdf
+
 steamcmd \
     +login $STEAM_USERNAME $STEAM_PASSWORD \
     +workshop_build_item /home/steam/workshopitem.vdf \
