@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "🏗️ Build workshopitem.vdf"
 cat > workshopitem.vdf << EOF
 "workshopitem"
 {
@@ -14,9 +15,11 @@ cat > workshopitem.vdf << EOF
 }
 EOF
 
+echo "🔍 Verify workshopitem.vdf"
 cat workshopitem.vdf
 
+echo "🚀 Release to Steam Workshop"
 steamcmd \
-    +login $STEAM_USERNAME $STEAM_PASSWORD \
+    +login $INPUT_STEAM_USERNAME $INPUT_STEAM_PASSWORD \
     +workshop_build_item /home/steam/workshopitem.vdf \
     +quit
