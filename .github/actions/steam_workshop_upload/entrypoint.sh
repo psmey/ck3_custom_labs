@@ -3,14 +3,14 @@
 cat > workshopitem.vdf << EOF
 "workshopitem"
 {
-    "appid" "$GAME_ID"
-    "publishedfileid" "$MOD_ID"
-    "contentfolder" "$MOD_CONTENT_PATH"
-    "previewfile" "$WORKSHOP_THUMBNAIL_PATH"
-    "visibility" "$WORKSHOP_VISIBILITY"
-    "title" "$WORKSHOP_TITLE"
-    "description" "$WORKSHOP_DESCRIPTION"
-    "changenote" "$WORKSHOP_CHANGENOTE"
+    "appid" "${{ inputs.GAME_ID }}"
+    "publishedfileid" "${{ inputs.MOD_ID }}"
+    "contentfolder" "${{ inputs.MOD_CONTENT_PATH }}"
+    "previewfile" "${{ inputs.WORKSHOP_THUMBNAIL_PATH }}"
+    "visibility" "${{ inputs.WORKSHOP_VISIBILITY }}"
+    "title" "${{ inputs.WORKSHOP_TITLE }}"
+    "description" "${{ inputs.WORKSHOP_DESCRIPTION }}"
+    "changenote" "${{ inputs.WORKSHOP_CHANGENOTE }}"
 }
 EOF
 
