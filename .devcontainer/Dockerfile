@@ -11,6 +11,7 @@ RUN apt-get update \
     git \
     wget \
     ca-certificates \
+    shellcheck \
     && rm -rf /var/lib/apt/lists/*
 RUN update-ca-certificates
 

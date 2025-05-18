@@ -12,6 +12,7 @@
                 // Linting
                 "EditorConfig.EditorConfig",
                 "exiasr.hadolint",
+                "timonwong.shellcheck",
                 // Language support
                 "yzhang.markdown-all-in-one",
                 "dragon-archer.paradox-highlight",
