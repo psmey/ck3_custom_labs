@@ -18,8 +18,8 @@ EOF
 
 cat /home/steam/workshopitem.vdf
 
-echo "🚀 Release to Steam Workshop"
+echo "🚀 Upload to Steam Workshop"
 steamcmd \
-    +login $INPUT_STEAM_USERNAME $INPUT_STEAM_PASSWORD \
+    +login "$INPUT_STEAM_USERNAME" "$INPUT_STEAM_PASSWORD" \
     +workshop_build_item /home/steam/workshopitem.vdf \
     +quit

@@ -16,10 +16,8 @@ jobs:
         with:
           steam_username: ${{ secrets.STEAM_USERNAME }}
           steam_password: ${{ secrets.STEAM_PASSWORD }}
-          game_id: "1158310"
-          mod_id: "3479625504"
-          mod_content_path: "./mod"
-          workshop_thumbnail_path: "./mod/thumbnail.png"
-          workshop_visibility: "2" # private
-          workshop_title: "Custom Labs"
-          workshop_description: "A simple mod satisfying my need to min-max cultures, religions and other stuff in CK3."
+          game_id: '1158310'
+          mod_id: '3479625504'
+          workshop_visibility: '2' # private
+          workshop_title: 'Custom Labs'
+          workshop_description: 'A simple mod satisfying my need to min-max cultures, religions and other stuff in CK3.'
