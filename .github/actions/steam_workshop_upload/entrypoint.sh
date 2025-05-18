@@ -7,8 +7,8 @@ cat > /home/steam/workshopitem.vdf << EOF
 {
     "appid" "$INPUT_GAME_ID"
     "publishedfileid" "$INPUT_MOD_ID"
-    "contentfolder" "$INPUT_MOD_CONTENT_PATH"
-    "previewfile" "$INPUT_WORKSHOP_THUMBNAIL_PATH"
+    "contentfolder" "/github/workspace/${INPUT_MOD_CONTENT_PATH}"
+    "previewfile" "/github/workspace${INPUT_WORKSHOP_THUMBNAIL_PATH}"
     "visibility" "$INPUT_WORKSHOP_VISIBILITY"
     "title" "$INPUT_WORKSHOP_TITLE"
     "description" "$INPUT_WORKSHOP_DESCRIPTION"

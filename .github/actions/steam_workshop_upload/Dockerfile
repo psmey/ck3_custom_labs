@@ -22,8 +22,6 @@ RUN add-apt-repository multiverse \
 COPY entrypoint.sh /home/steam/entrypoint.sh
 RUN chmod +x /home/steam/entrypoint.sh
 
-COPY mod /home/steam/mod
-
 USER steam
 
 ENTRYPOINT ["/home/steam/entrypoint.sh"]

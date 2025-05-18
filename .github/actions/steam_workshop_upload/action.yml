@@ -14,13 +14,13 @@ inputs:
     description: 'Workshop mod ID'
     required: true
   mod_content_path:
-    description: 'Path to the mod folder'
+    description: 'Path to the mod folder inside the repo'
     required: false
-    default: '/home/steam/mod'
+    default: 'mod'
   workshop_thumbnail_path:
-    description: 'Path to the thumbnail image'
+    description: 'Path to the thumbnail image inside the repo'
     required: false
-    default: '/home/steam/mod/thumbnail.png'
+    default: 'mod/thumbnail.png'
   workshop_visibility:
     description: 'Visibility (0 = Public, 1 = Friends-only, 2 = Private)'
     required: false
