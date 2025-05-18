@@ -1,7 +1,8 @@
 #!/bin/bash
 
 echo "🏗️ Build workshopitem.vdf"
-cat > workshopitem.vdf << EOF
+
+cat > /home/steam/workshopitem.vdf << EOF
 "workshopitem"
 {
     "appid" "$INPUT_GAME_ID"
@@ -15,8 +16,7 @@ cat > workshopitem.vdf << EOF
 }
 EOF
 
-echo "🔍 Verify workshopitem.vdf"
-cat workshopitem.vdf
+cat /home/steam/workshopitem.vdf
 
 echo "🚀 Release to Steam Workshop"
 steamcmd \

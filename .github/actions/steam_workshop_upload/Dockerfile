@@ -24,6 +24,5 @@ COPY entrypoint.sh /home/steam/entrypoint.sh
 RUN chmod +x /home/steam/entrypoint.sh
 
 USER steam
-WORKDIR /home/steam
 
 ENTRYPOINT ["/home/steam/entrypoint.sh"]
