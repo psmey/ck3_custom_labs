@@ -2,8 +2,6 @@ FROM ubuntu:noble@sha256:1e622c5f073b4f6bfad6632f2616c7f59ef256e96fe78bf6a595d1d
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-RUN useradd -m -s /bin/bash developer
-
 # Install dependencies
 RUN apt-get update \
     && apt-get upgrade -y \
@@ -57,5 +55,3 @@ RUN wget -qP /tmp https://github.com/amtep/tiger/releases/download/${CK3_TIGER_V
     && ln -s /opt/ck3-tiger-linux-${CK3_TIGER_VERSION}/ck3-tiger /usr/local/bin/ck3-tiger \
     # Verify installation
     && ck3-tiger --version
-
-USER developer

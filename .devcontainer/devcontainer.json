@@ -11,6 +11,7 @@
                 "docker.docker",
                 // Linting
                 "EditorConfig.EditorConfig",
+                "esbenp.prettier-vscode",
                 "exiasr.hadolint",
                 "timonwong.shellcheck",
                 // Language support
