@@ -1,0 +1,5 @@
+name: Prettier
+description: Runs Prettier over the code base
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
