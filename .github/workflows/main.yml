@@ -8,20 +8,21 @@ jobs:
   prettier:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Run Prettier
-        uses: ./.github/actions/prettier
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - run: |
+          yarn
+          yarn prettier . --write
+      - uses: autofix-ci/action@v1
+        with:
+          commit-message: 'Apply Prettier format'
 
   release:
     runs-on: ubuntu-latest
     needs:
       - prettier
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
+      - uses: actions/checkout@v4
       - name: Upload new mod version
         uses: ./.github/actions/steam_workshop_upload
         with:
