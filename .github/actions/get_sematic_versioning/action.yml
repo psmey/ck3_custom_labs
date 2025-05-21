@@ -1,0 +1,36 @@
+name: 'Get sematic versioning'
+description: 'Fetches PR info and checks that the title ends with | patch, | minor, or | major'
+
+inputs:
+  github_token:
+    description: 'GitHub token for authentication'
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Get PR info
+      id: pr
+      uses: octokit/request-action@v2.x
+      with:
+        route: GET /repos/${{ github.repository }}/commits/${{ github.sha }}/pulls
+      env:
+        GITHUB_TOKEN: ${{ inputs.github_token }}
+
+    - name: Enforce PR title format
+      shell: bash
+      run: |
+        PR_TITLE=$(echo '${{ steps.pr.outputs.data }}' | jq -r '.[0].title')
+        echo "🔍 Checking PR title: $PR_TITLE"
+
+        if [[ ! "$PR_TITLE" =~ \|[[:space:]]*(patch|minor|major)$ ]]; then
+          echo "❌ ERROR: PR title must end with '| patch', '| minor', or '| major'"
+          exit 1
+        fi
+
+    - name: Determine version bump type
+      shell: bash
+      run: |
+        BUMP_TYPE=$(echo "$PR_TITLE" | sed -E 's/.*\|(.*)/\1/' | tr -d '[:space:]')
+        echo "✅ Detected bump type: $BUMP_TYPE"
+        echo "bump_type=$BUMP_TYPE" >> $GITHUB_ENV
