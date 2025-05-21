@@ -12,8 +12,8 @@ jobs:
       - uses: actions/setup-node@v4
       - run: |
           yarn init -y
-          yarn add --dev prettier
-          yarn prettier . --check
+          yarn add --dev prettylint
+          yarn prettylint .
 
   release:
     runs-on: ubuntu-latest
