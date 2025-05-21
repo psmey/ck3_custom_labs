@@ -5,6 +5,7 @@ on:
     workflows: ['Prepare Release']
     types:
       - completed
+    status: success
 
 jobs:
   publish:
