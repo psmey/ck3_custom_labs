@@ -6,6 +6,7 @@ on:
 
 jobs:
   enforce-semantic-versioning:
+    name: Enfoce semantic versioning
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -17,6 +18,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
   prettier:
+    name: Prettier
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
