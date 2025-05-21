@@ -20,6 +20,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Enforce PR title format and extract bump type
+        uses: ./.github/actions/get_sematic_versioning
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Bump version and create tag
         id: tag
         uses: mathieudutour/github-tag-action@v6.1
