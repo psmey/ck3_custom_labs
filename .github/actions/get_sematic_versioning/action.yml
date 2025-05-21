@@ -9,6 +9,9 @@ inputs:
 runs:
   using: 'composite'
   steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
     - name: Get PR info
       id: pr
       uses: octokit/request-action@v2.x
