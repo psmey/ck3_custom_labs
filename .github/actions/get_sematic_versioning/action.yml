@@ -20,17 +20,31 @@ runs:
     - name: Enforce PR title format
       shell: bash
       run: |
-        PR_TITLE=$(echo '${{ steps.pr.outputs.data }}' | jq -r '.[0].title')
-        echo "🔍 Checking PR title: $PR_TITLE"
+        # Skip title format enforcement if the branch is 'main'
+        if [[ "${{ github.ref }}" != "refs/heads/main" ]]; then
+          PR_TITLE=$(echo '${{ steps.pr.outputs.data }}' | jq -r '.[0].title')
+          echo "🔍 Checking PR title: $PR_TITLE"
 
-        if [[ ! "$PR_TITLE" =~ \|[[:space:]]*(patch|minor|major)$ ]]; then
-          echo "❌ ERROR: PR title must end with '| patch', '| minor', or '| major'"
-          exit 1
+          if [[ ! "$PR_TITLE" =~ \|[[:space:]]*(patch|minor|major)$ ]]; then
+            echo "❌ ERROR: PR title must end with '| patch', '| minor', or '| major'"
+            exit 1
+          fi
+        else
+          echo "✅ Skipping PR title format check because this is the 'main' branch."
         fi
 
     - name: Determine version bump type
       shell: bash
       run: |
-        BUMP_TYPE=$(echo "$PR_TITLE" | sed -E 's/.*\|(.*)/\1/' | tr -d '[:space:]')
-        echo "✅ Detected bump type: $BUMP_TYPE"
+        # Check the branch name and default to patch bump if on main
+        if [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
+          BUMP_TYPE="patch"
+          echo "🔧 Defaulting to 'patch' bump type since this is on the 'main' branch."
+        else
+          # Extract the bump type from the PR title
+          PR_TITLE=$(echo '${{ steps.pr.outputs.data }}' | jq -r '.[0].title')
+          BUMP_TYPE=$(echo "$PR_TITLE" | sed -E 's/.*\|(.*)/\1/' | tr -d '[:space:]')
+          echo "✅ Detected bump type: $BUMP_TYPE"
+        fi
+
         echo "bump_type=$BUMP_TYPE" >> $GITHUB_ENV
