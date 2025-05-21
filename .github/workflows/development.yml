@@ -1,17 +1,17 @@
-name: Workflow
+name: Development
 
 on:
   push:
   workflow_dispatch:
 
 jobs:
-  enforce-versioing:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Enforce PR title format and extract bump type
-      uses: ./.github/actions/get_sematic_versioning
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+  enforce-semantic-versioning:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enforce PR title format and extract bump type
+        uses: ./.github/actions/get_sematic_versioning
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
   prettier:
     runs-on: ubuntu-latest
