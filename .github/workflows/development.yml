@@ -1,0 +1,34 @@
+name: Development
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  enforce-semantic-versioning:
+    name: Enfoce semantic versioning
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Enforce PR title format and extract bump type
+        uses: ./.github/actions/get_sematic_versioning
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+  prettier:
+    name: Prettier
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+
+      - name: Lint with Prettier
+        run: |
+          yarn init -y
+          yarn add --dev prettier prettylint
+          yarn prettylint .

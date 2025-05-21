@@ -1,0 +1,45 @@
+name: Publish Release
+
+on:
+  workflow_run:
+    workflows: ['Prepare Release']
+    types:
+      - completed
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ github.ref_name }}
+          release_name: Release ${{ github.ref_name }}
+          body: |
+            Automatic release from tag ${{ github.ref_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update "latest" tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -f latest ${{ github.ref_name }}
+          git push origin latest --force
+
+      - name: Upload mod version
+        uses: ./.github/actions/steam_workshop_upload
+        with:
+          steam_username: ${{ secrets.STEAM_USERNAME }}
+          steam_password: ${{ secrets.STEAM_PASSWORD }}
+          game_id: '1158310'
+          mod_id: '3479625504'
+          workshop_visibility: '2'
+          workshop_title: 'Custom Labs'
+          workshop_description: 'A simple mod satisfying my need to min-max cultures, religions, and other stuff in CK3.'
