@@ -61,6 +61,8 @@ jobs:
 
       - name: Upload mod.zip to GitHub Release
         uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.get_release.outputs.result }}
           asset_path: ./mod.zip
