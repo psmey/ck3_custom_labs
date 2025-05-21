@@ -7,7 +7,7 @@ end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
 
-[*.y*ml]
+[*.{y*ml,md}]
 indent_size = 2
 
 [mod/**.txt]
