@@ -1,5 +1,5 @@
-name: 'Get sematic versioning'
-description: 'Fetches PR info and checks that the title ends with | patch, | minor, or | major'
+name: Get sematic versioning
+description: Fetches PR info and checks that the title ends with | patch, | minor, or | major
 
 inputs:
   github_token:
@@ -9,9 +9,6 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-
     - name: Get PR info
       id: pr
       uses: octokit/request-action@v2.x
