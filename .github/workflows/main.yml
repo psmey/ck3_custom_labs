@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v4
       - run: |
           yarn init -y
-          yarn add --dev prettylint
+          yarn add --dev prettier prettylint
           yarn prettylint .
 
   release:
