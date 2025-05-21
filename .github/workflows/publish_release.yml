@@ -43,6 +43,30 @@ jobs:
           git tag -f latest ${{ env.tag_name }}
           git push origin latest --force
 
+      - name: Zip mod folder
+        run: zip -r mod.zip mod
+
+      - name: Get Release Upload URL
+        id: get_release
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const release = await github.rest.repos.getReleaseByTag({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag: process.env.tag_name,
+            });
+            return release.data.upload_url;
+          result-encoding: string
+
+      - name: Upload mod.zip to GitHub Release
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.get_release.outputs.result }}
+          asset_path: ./mod.zip
+          asset_name: mod.zip
+          asset_content_type: application/zip
+
       - name: Upload mod version
         uses: ./.github/actions/steam_workshop_upload
         with:
