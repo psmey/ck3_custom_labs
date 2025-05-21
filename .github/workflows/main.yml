@@ -13,7 +13,7 @@ jobs:
       - run: |
           yarn init -y
           yarn add --dev prettier
-          yarn prettier /github/workspace --check
+          yarn prettier . --check
 
   release:
     runs-on: ubuntu-latest
