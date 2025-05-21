@@ -2,15 +2,12 @@ name: Prepare Release
 
 on:
   push:
-    branches:
-      - main
+  #  branches:
+  #    - main
   workflow_dispatch:
 
 jobs:
   prepare:
-    # if: |
-    #   github.ref == 'refs/heads/main' &&
-    #   contains(github.event.head_commit.message, 'Merge pull request')
     runs-on: ubuntu-latest
     permissions:
       contents: write
