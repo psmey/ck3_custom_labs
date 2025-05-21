@@ -36,10 +36,11 @@ jobs:
 
           echo "🔧 Updating descriptor.mod to version $VERSION"
 
-          sed -i -E 's/^version="[^"]+"/version="'"$VERSION"'"/' /github/workspace/mod/descriptor.mod
-
           pwd
           ls
+
+          sed -i -E 's/^version="[^"]+"/version="'"$VERSION"'"/' /github/workspace/mod/descriptor.mod
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add /github/workspace/mod/descriptor.mod
