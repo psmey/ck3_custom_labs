@@ -19,11 +19,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Get tag name
+      - name: Get latest tag
         id: get_tag
         run: |
-          TAG_NAME=${GITHUB_REF#refs/tags/}
-          echo "Tag name is $TAG_NAME"
+          TAG_NAME=$(git describe --tags --abbrev=0)
+          echo "Latest tag is $TAG_NAME"
           echo "tag_name=$TAG_NAME" >> $GITHUB_ENV
 
       - name: Create GitHub Release
