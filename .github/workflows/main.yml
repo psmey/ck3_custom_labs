@@ -1,4 +1,4 @@
-name: autofix.ci
+name: Workflow
 
 on:
   push:
@@ -13,10 +13,7 @@ jobs:
       - run: |
           yarn init -y
           yarn add --dev prettier
-          yarn prettier . --write
-      - uses: autofix-ci/action@v1
-        with:
-          commit-message: 'Apply Prettier format'
+          yarn prettier /workspace/github --check
 
   release:
     runs-on: ubuntu-latest
