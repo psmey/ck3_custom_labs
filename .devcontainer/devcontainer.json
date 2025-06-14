@@ -8,11 +8,17 @@
             "extensions": [
                 // Docker
                 "docker.docker",
-                // Linting
+                "exiasr.hadolint",
+                // General Linting
                 "EditorConfig.EditorConfig",
                 "esbenp.prettier-vscode",
-                "exiasr.hadolint",
                 "timonwong.shellcheck",
+                // Python
+                "ms-python.python",
+                "ms-python.pylint",
+                "ms-python.black-formatter",
+                "ms-python.flake8",
+                "ms-python.isort",
                 // Language support
                 "yzhang.markdown-all-in-one",
                 "dragon-archer.paradox-highlight",
