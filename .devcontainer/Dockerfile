@@ -10,6 +10,7 @@ RUN apt-get update \
     wget \
     ca-certificates \
     shellcheck \
+    python3 \
     && rm -rf /var/lib/apt/lists/*
 RUN update-ca-certificates
 
