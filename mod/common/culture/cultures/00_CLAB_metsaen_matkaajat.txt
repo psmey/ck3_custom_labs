@@ -1,0 +1,131 @@
+﻿CLAB_metsaen_matkaajat = {
+    color = { 0.28 0.24 0.55 } # darkslateblue - https://latexcolor.com/
+
+    parents = { norse sami }
+    created = 817
+
+    ethos = ethos_communal
+    heritage = heritage_balto_finnic
+    language = language_sami
+    martial_custom = martial_custom_male_only
+
+    head_determination = head_determination_herd
+
+    traditions = {
+
+        ### Taiga ###
+
+        # tradition_winter_warriors
+        # winter_soldier_trait_more_common = yes
+        # winter_trait_bonuses = yes
+        # can_recruit_winter_specialist = yes
+        # resistant_to_winter_privation = yes
+        # taiga_travel_danger = taiga_low_danger_reduction
+
+        tradition_forest_fighters
+        # forest_fighter_trait_more_common = yes
+        # forest_trait_bonuses = yes
+        # can_recruit_forest_specialist = yes
+        # forest_nomadic_cultrad_stationing_bonus = yes
+        # forest_travel_danger = forest_low_danger_reduction
+        # taiga_travel_danger = taiga_low_danger_reduction
+        # forest_levy_size = 0.1
+        # taiga_levy_size = 0.1
+        # forest_supply_limit_mult = 0.25
+        # taiga_supply_limit_mult = 0.25
+
+        tradition_forest_wardens
+        # unlock_maa_metsanvartija = yes
+        # logging_camps_building_bonuses = yes
+        # can_recruit_forest_specialist = yes
+        # forest_fighter_trait_more_common = yes
+        # forest_hunt_success_chance = yes
+        # watermills_forestries_unlock = yes
+        # forest_travel_danger = forest_high_danger_reduction
+        # taiga_travel_danger = taiga_high_danger_reduction
+        # forest_development_growth_factor = 0.15
+        # taiga_development_growth_factor = 0.15
+        # forest_construction_gold_cost = -0.1
+        # taiga_construction_gold_cost = -0.1
+        # forest_holding_construction_gold_cost = -0.1
+        # taiga_holding_construction_gold_cost = -0.1
+
+        tradition_forest_folk
+        # logging_camps_building_bonuses = yes
+        # forest_hunt_success_chance = yes
+        # watermills_forestries_unlock = yes
+        # forest_travel_danger = forest_medium_danger_reduction
+        # taiga_travel_danger = taiga_medium_danger_reduction
+        # forest_fertility_growth_mult = medium_culture_county_fertility_value_mult
+        # taiga_fertility_growth_mult = medium_culture_county_fertility_value_mult
+        # forest_development_growth_factor = 0.15
+        # taiga_development_growth_factor = 0.15
+        # forest_construction_gold_cost = -0.1
+        # taiga_construction_gold_cost = -0.1
+        # forest_holding_construction_gold_cost = -0.1
+        # taiga_holding_construction_gold_cost = -0.1
+
+        ### Archers ###
+
+        tradition_adaptive_skirmishing
+        # next_level_military_camps = yes
+        # skirmisher_nomadic_cultrad_stationing_bonus = yes
+        # enemy_terrain_advantage = -0.25
+        # archers_damage_mult = 0.15
+        # archers_toughness_mult = 0.15
+        # archers_maintenance_mult = -0.05
+        # skirmishers_damage_mult = 0.15
+        # skirmishers_toughness_mult = 0.2
+        # skirmishers_maintenance_mult = -0.05
+
+        tradition_formation_fighting
+        # next_level_barracks = yes
+        # formation_fighting_strategist = yes
+        # formation_nomadic_cultrad_stationing_bonus = yes
+        # counter_efficiency = 0.15
+        # pursue_efficiency = -0.15
+        # archers_damage_mult = 0.1
+        # archers_toughness_mult = 0.15
+        # pikemen_damage_mult = 0.15
+        # pikemen_toughness_mult = 0.2
+        # nomadic_horde_toughness_mult = 0.05
+        # nomadic_horde_damage_mult = 0.05
+
+        # tradition_longbow_competitions
+        # unlock_maa_longbowmen = yes
+        # archer_era_improvement = yes
+        # archers_max_size_add = 4
+        # heavy_cavalry_max_size_add = -2
+        # pikemen_max_size_add = -2
+
+        # tradition_land_of_the_bow
+        # unlock_maa_archers_of_the_nile = yes
+        # hunting_archery_building_bonuses = yes
+        # floodplains_levy_size = 0.1
+        # garrison_size = 0.25
+        # defender_advantage = 5
+        # archers_damage_mult = 0.2
+
+        # tradition_bush_hunting
+        # unlock_maa_bush_hunter = yes
+        # jungle_trait_bonuses = yes
+        # dry_trait_bonuses = yes
+        # can_recruit_jungle_specialist = yes
+        # archers_damage_mult = 0.2
+        # jungle_supply_limit_mult = 0.25
+        # jungle_travel_danger = jungle_medium_danger_reduction
+    }
+
+    name_list = name_list_sami
+
+    coa_gfx = { sami_coa_gfx balto_finnic_group_coa_gfx steppe_coa_gfx western_coa_gfx }
+    building_gfx = { western_building_gfx }
+    clothing_gfx = { sami_clothing_gfx northern_clothing_gfx }
+    unit_gfx = { northern_unit_gfx }
+
+    ethnicities = {
+        33 = circumpolar_dark_hair
+        33 = circumpolar_brown_hair
+        33 = circumpolar_blonde_hair
+    }
+}
