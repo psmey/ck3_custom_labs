@@ -1,4 +1,4 @@
-CLAB_jungle_juggernauts = {
+﻿CLAB_jungle_juggernauts = {
     color = { 0.0 0.29 0.29 } # deepjunglegreen - https://latexcolor.com/
 
     parents = { oriya burmese }
