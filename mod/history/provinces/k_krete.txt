@@ -1,4 +1,4 @@
-# 479 - Kaneia
+﻿# 479 - Kaneia
 479 = {	# 479 - Kaneia
 
     # County Title
@@ -19,7 +19,7 @@
 
     # Misc
     # culture = greek
-    culture = CLAB_raiders
+    culture = CLAB_varangian_raiders
     religion = orthodox
     terrain = mountain
 
@@ -56,7 +56,7 @@
 
     # Misc
     # culture = greek
-    culture = CLAB_raiders
+    culture = CLAB_varangian_raiders
     religion = orthodox
     terrain = mountain
 
@@ -78,27 +78,27 @@
 # 3743 - Rethymno
 3743 = {	# 3743 - Rethymno
     # culture = greek
-    culture = CLAB_raiders
+    culture = CLAB_varangian_raiders
     religion = orthodox
 }
 
 # 3744 - Paleohora
 3744 = {	# 3744 - Paleohora
     # culture = greek
-    culture = CLAB_raiders
+    culture = CLAB_varangian_raiders
     religion = orthodox
 }
 
 # 3745 - Agios Nikolaos
 3745 = {	# 3745 - Agios Nikolaos
     # culture = greek
-    culture = CLAB_raiders
+    culture = CLAB_varangian_raiders
     religion = orthodox
 }
 
 # 3746 - Ierapetra
 3746 = {	# 3746 - Ierapetra
     # culture = greek
-    culture = CLAB_raiders
+    culture = CLAB_varangian_raiders
     religion = orthodox
 }
