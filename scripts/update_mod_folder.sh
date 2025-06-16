@@ -9,10 +9,10 @@
 LOCAL_MOD_PATH="/mnt/c/Program Files (x86)/Steam/steamapps/workshop/content/1158310/3479625504"
 
 if [ -z "$LOCAL_MOD_PATH" ]; then
-    echo "Variable LOCAL_MOD_PATH is not set"
+    echo "❌ Variable LOCAL_MOD_PATH is not set"
 fi
 
-echo "🗑️ removing previous mod file contents at"
+echo "🗑️ Removing previous mod file contents at"
 echo "   $LOCAL_MOD_PATH"
 
 if [ -d "$LOCAL_MOD_PATH" ]; then
