@@ -43,7 +43,7 @@
 
         ### Knights ###
 
-        tradition_only_the_strong
+        # tradition_only_the_strong
         # +2 Number of Knights
         # +100% knight Effectiveness
         # +8 Men-at-Arms Damage
@@ -75,8 +75,7 @@
         # tradition_stand_and_fight
         # heavy_cavalry_toughness_mult = 0.1
 
-        # NOT USED: Not enough slots
-        # tradition_horse_breeder
+        tradition_horse_breeder
         # heavy_cavalry_maintenance_mult = -0.15
         # heavy_cavalry_recruitment_cost_mult = -0.25
 
