@@ -1,0 +1,115 @@
+﻿CLAB_metropolitan_merchants = {
+    color = italian
+
+    parents = { italian catalan }
+
+    created = 817
+
+    ethos = ethos_communal
+    # -10% Building Construction Time
+    # -5% Building Construction Cost
+
+    heritage = heritage_iberian
+    language = language_high_german
+    martial_custom = martial_custom_male_only
+
+    head_determination = head_determination_domain
+
+    traditions = {
+
+        ### Cities ###
+
+        tradition_republican_legacy
+        # can_make_republican_vassals = yes
+        # unlock_innovation_pike_columns = yes
+        # city_buildings_more_powerful = yes
+        # city_buildings_less_control = yes
+        # republican_vassals_pay_more = yes
+        # more_parochial_vassals = yes
+        # next_level_cities = yes
+        # city_holding_build_gold_cost = -0.05
+        # city_holding_holding_build_gold_cost = -0.05
+        # barons_and_minor_landholders_opinion = -20
+        # parochial_opinion = -20
+        # parochial_tax_contribution_mult = 0.1
+        # parochial_levy_contribution_mult = 0.1
+
+        tradition_city_keepers
+        # next_level_guild_halls = yes
+        # city_buildings_more_county_opinion = yes
+        # ai_more_likely_to_city = yes
+        # architect_trait_prestige = yes
+        # watermills_windmills_cities = yes
+        # city_holding_build_speed = -0.25
+
+        ### Hills ###
+
+        tradition_hill_dwellers
+        # hill_farms_building_bonuses = yes
+        # hills_hunt_success_chance = yes
+        # windmills_hill_farms_unlock = yes
+        # hills_travel_danger = hills_medium_danger_reduction
+        # hills_fertility_growth_mult = low_culture_county_fertility_value_mult
+        # hills_development_growth_factor = 0.2
+        # hills_construction_gold_cost = -0.1
+        # hills_holding_construction_gold_cost = -0.1
+        # hills_fertility_growth_add = 0.1
+
+        tradition_mountaineer_ruralism
+        # unlock_maa_zbrojnosh = yes
+        # quarries_building_bonuses = yes
+        # hill_farms_building_bonuses = yes
+        # rough_terrain_expert_trait_more_common = yes
+        # mountain_trait_bonuses = yes
+        # can_recruit_mountain_specialist = yes
+        # mountains_travel_danger = mountains_high_danger_reduction
+        # hills_travel_danger = hills_high_danger_reduction
+        # hills_development_growth_factor = 0.1
+        # mountains_development_growth_factor = 0.1
+
+        ### Heavy Infantry ###
+
+        tradition_stand_and_fight
+        # levy_toughness = 2
+        # maa_toughness_mult = 0.1
+        # heavy_infantry_toughness_mult = 0.1
+        # heavy_cavalry_toughness_mult = 0.1
+        # pikemen_toughness_mult = 0.2
+        # hard_casualty_modifier = 0.4
+        # defender_advantage = 8
+        # stand_fight_nomadic_cultrad_stationing_bonus = yes
+
+        tradition_druzhina
+        # unlock_maa_druzhina = yes
+        # martial_education_more_valued = yes
+        # prowess_traits_more_valued = yes
+        # blademaster_trait_bonuses = yes
+        # craven_and_content_traits_looked_down_upon = yes
+        # knights_slightly_more_prone_to_injury = yes
+        # can_duel_rivals = yes
+        # knight_limit = 2
+        # negate_prowess_penalty_add = 5
+        # accolade_glory_gain_mult = 0.2
+        # heavy_infantry_toughness_mult = 0.1
+
+        tradition_roman_legacy
+        # unlock_maa_cataphract = yes
+        # levy_size = -0.25
+        # men_at_arms_recruitment_cost = -0.15
+        # men_at_arms_maintenance = -0.15
+        # levy_reinforcement_rate = -0.25
+        # heavy_infantry_max_size_add = 2
+        # heavy_cavalry_max_size_add = 2
+    }
+
+    name_list = name_list_franconian
+
+    coa_gfx = { latin_group_coa_gfx german_group_coa_gfx western_coa_gfx }
+    building_gfx = { western_building_gfx }
+    clothing_gfx = { dde_hre_clothing_gfx western_clothing_gfx }
+    unit_gfx = { western_unit_gfx }
+
+    ethnicities = {
+        10 = mediterranean
+    }
+}
