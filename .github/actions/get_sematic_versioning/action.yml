@@ -21,17 +21,17 @@ runs:
       shell: bash
       run: |
         # Skip title format enforcement if the branch is 'main'
-        if [[ "${{ github.ref }}" != "refs/heads/main" ]]; then
-          PR_TITLE=$(echo '${{ steps.pr.outputs.data }}' | jq -r '.[0].title')
-          echo "🔍 Checking PR title: $PR_TITLE"
+        # if [[ "${{ github.ref }}" != "refs/heads/main" ]]; then
+        PR_TITLE=$(echo '${{ steps.pr.outputs.data }}' | jq -r '.[0].title')
+        echo "🔍 Checking PR title: $PR_TITLE"
 
-          if [[ ! "$PR_TITLE" =~ \|[[:space:]]*(patch|minor|major)$ ]]; then
-            echo "❌ ERROR: PR title must end with '| patch', '| minor', or '| major'"
-            exit 1
-          fi
-        else
-          echo "✅ Skipping PR title format check because this is the 'main' branch."
+        if [[ ! "$PR_TITLE" =~ \|[[:space:]]*(patch|minor|major)$ ]]; then
+          echo "❌ ERROR: PR title must end with '| patch', '| minor', or '| major'"
+          exit 1
         fi
+        # else
+        #   echo "✅ Skipping PR title format check because this is the 'main' branch."
+        # fi
 
     - name: Determine version bump type
       shell: bash
