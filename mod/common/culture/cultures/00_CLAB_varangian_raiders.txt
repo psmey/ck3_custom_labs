@@ -40,7 +40,18 @@
 
         ### Hills ###
 
-        tradition_amharic_highlanders
+        tradition_hill_dwellers
+        # hill_farms_building_bonuses = yes
+        # hills_hunt_success_chance = yes
+        # windmills_hill_farms_unlock = yes
+        # hills_travel_danger = hills_medium_danger_reduction
+        # hills_fertility_growth_mult = low_culture_county_fertility_value_mult
+        # hills_development_growth_factor = 0.2
+        # hills_construction_gold_cost = -0.1
+        # hills_holding_construction_gold_cost = -0.1
+        # hills_fertility_growth_add = 0.1
+
+        # tradition_amharic_highlanders
         # unlock_sarawit_innovation = yes
         # hill_farms_building_bonuses = yes
         # hills_development_growth_factor = 0.2
