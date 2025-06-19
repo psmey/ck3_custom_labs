@@ -1,7 +1,7 @@
 ﻿CLAB_sahel_sand_striders = {
     color = { 1.0 0.75 0.0 } # amber - https://latexcolor.com/
 
-    parents = { outremer butr }
+    parents = { bedouin butr }
 
     created = 817
 
