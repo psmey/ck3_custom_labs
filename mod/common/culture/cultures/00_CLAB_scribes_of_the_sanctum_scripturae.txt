@@ -1,0 +1,105 @@
+CLAB_scribes_of_the_sanctum_scripturae = {
+    color = { 0.1 0.6 0.8 }
+
+    parents = { persian burmese }
+
+    created = 817
+
+    ethos = ethos_communal
+    # -10% Building Construction Time
+    # -5% Building Construction Cost
+
+    heritage = heritage_iranian
+    language = language_iranian
+    martial_custom = martial_custom_male_only
+
+    head_determination = head_determination_domain
+    traditions = {
+        ### Development ###
+
+        tradition_agrarian
+        # +30% Development Growth in Farmlands and Floodplains Terrain
+        # +10% Levy Size in Farmlands and Floodplains Terrain
+        # −10% Building Construction Cost in Farmlands and Floodplains Terrain
+        # +20% Taxes in Farmlands and Floodplains Terrain if Diligent or Patient
+        # +20% Development Growth in Farmlands and Floodplains Terrain if Athletic
+
+        tradition_polders
+        # +2%/+3%/+4%/+5%/+6%/+6%/+7%/+8% Holding Taxes scaling with Manor Houses level in coastal baronies
+        # +1% Holding Taxes per Orchards level in coastal baronies
+        # +0%/+0%/+10%/+10%/+10%/+10%/+10%/+10% Supply Limit scaling with Orchards level in coastal baronies
+        # −10% Construction Time in coastal baronies
+
+        tradition_gardening
+        # Can construct Royal Gardens duchy buildings
+        # Can grant the Court Gardener court position
+
+        ### Build Speed ###
+
+        tradition_fervent_temple_builders
+        # more_fervor_on_church_construction = yes
+        # prestige_from_temple_construction = yes
+        # build_bonuses_on_religious_traits = yes
+        # temple_next_level = yes
+        # tribals_can_into_temples = yes
+        # ai_zeal = 25
+        # church_holding_build_gold_cost = 0.1
+
+        tradition_hard_working
+        # development_gain_on_building_complete = yes
+        # next_level_w_mills = yes
+        # build_speed = -0.15
+        # stress_gain_mult = 0.15
+        # build_gold_cost = 0.15
+
+        ### LEARNING ###
+
+        tradition_ce1_ritual_washing
+        # monthly_learning_lifestyle_xp_gain_mult = 0.1
+        # better_disease_resistance = yes
+        # diligent_trait_more_common = yes
+    }
+
+    dlc_tradition = {
+        trait = tradition_fp3_beacon_of_learning
+        # pensive_trait_more_common = yes
+        # rowdy_trait_less_common = yes
+        # innovation_from_learning_traits = yes
+        # can_appoint_court_scholar = yes
+        # guardian_education_better_outcomes = yes
+        # monthly_learning_lifestyle_xp_gain_mult = 0.2
+        # learning_per_piety_level = 1
+
+        requires_dlc_flag = legacy_of_persia
+        fallback = tradition_philosopher_culture
+    }
+
+    # Generally just good to have for the free slot
+
+    dlc_tradition = {
+        trait = tradition_malleable_invaders
+        # easier_to_hybridize = yes
+        # cheaper_to_hybridize = yes
+        # cheaper_convert_to_local_culture = yes
+        # faith_conversion_piety_cost_mult = -0.2
+        # different_faith_county_opinion_mult = -0.2
+        # ai_war_chance = 0.5
+        # ai_war_cooldown = -0.25
+
+        requires_dlc_flag = hybridize_culture
+    }
+
+
+    name_list = name_list_persian
+
+    coa_gfx = { iranian_group_coa_gfx }
+    building_gfx = { iranian_building_gfx }
+    clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+    unit_gfx = { iranian_unit_gfx }
+
+    ethnicities = {
+        8 = arab
+        5 = mediterranean
+        5 = turkic_west
+    }
+}

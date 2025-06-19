@@ -4,7 +4,9 @@
     parents = { norse sami }
     created = 817
 
-    ethos = ethos_communal
+    ethos = ethos_bellicose
+    # men_at_arms_recruitment_cost = -0.1
+    # men_at_arms_maintenance = -0.1
     heritage = heritage_balto_finnic
     language = language_sami
     martial_custom = martial_custom_male_only
