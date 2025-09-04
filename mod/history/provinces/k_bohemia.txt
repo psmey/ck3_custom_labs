@@ -2,7 +2,7 @@
 ##d_bohemia ###################################
 ###c_praha
 4125 = {	#PRAHA
-    culture = CLAB_republican
+    culture = CLAB_metropolitan_merchants
     religion = slavic_pagan
     holding = castle_holding
     867.1.1 = {
@@ -95,7 +95,7 @@
 
 ###c_plzen
 4145 = {	#PLZEN
-    culture = CLAB_republican
+    culture = CLAB_metropolitan_merchants
     religion = slavic_pagan
     holding = tribal_holding
     883.1.1 = {
@@ -130,7 +130,7 @@
 
 ###c_doudleby
 4154 = {	#DOUDLEBY
-    culture = CLAB_republican
+    culture = CLAB_metropolitan_merchants
     religion = slavic_pagan
     holding = tribal_holding
     883.1.1 = {
